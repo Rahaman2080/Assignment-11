@@ -1,6 +1,5 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ImEye, ImEyeBlocked } from 'react-icons/im';
-import Navbar from "../../Pages/Navbar/Navbar";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
 import Swal from "sweetalert2";
@@ -57,13 +56,13 @@ const Login = () => {
 
     return (
         <div>
-            <Navbar></Navbar>
             <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col">
-                    <div className="text-center">
+                <div className="hero-content p-0 m-5 md:mx-auto flex-col lg:flex-row">
+                    <div className="text-center lg:text-left">
                         <h1 className=" text-3xl md:text-5xl font-bold">Login now!</h1>
+                        <img src="https://i.ibb.co/KGHdPx9/login.png" className="w-3/4 mx-auto" alt="" />
                     </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <div className="card flex-shrink-0 w-full max-w-sm mx-auto shadow-2xl bg-base-100">
                         <form onSubmit={handleLogin} className="card-body">
                             <div className="form-control">
                                 <div className="relative h-10 w-full min-w-[200px]">
@@ -98,11 +97,11 @@ const Login = () => {
                                 </div>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary btn-outline normal-case">Login</button>
+                                <button className="border border-[#FF3811] hover:bg-[#FF3811] rounded-lg py-2 text-lg font-bold text-[#FF3811] hover:text-black">Login</button>
                             </div>
                             <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased"> Do not have an account?
                                 <Link to="/register"
-                                    className="font-bold ml-2 text-blue-700 transition-colors hover:text-pink-500"
+                                    className="font-bold ml-2 text-[#ff3811] transition-colors hover:text-orange-800"
                                 >
                                     Register
                                 </Link>

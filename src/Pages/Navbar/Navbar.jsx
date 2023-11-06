@@ -50,7 +50,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <Link to="/">
-                        <a href="https://imgbb.com/"><img src="https://i.ibb.co/HdwD0sG/architect-logo-60.png" alt="architect-logo-60" border="0" /></a>
+                        <img src="https://i.ibb.co/HdwD0sG/architect-logo-60.png" alt="architect-logo-60" border="0" className="hidden md:block" />
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -60,7 +60,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     {
-                        user && <p className="font-bold mr-3">{user.displayName}</p>
+                        user && <p className="font-bold mr-3 text-white">{user.displayName}</p>
                     }
                     {
                         user && <label tabIndex={0} className="avater">
@@ -70,7 +70,7 @@ const Navbar = () => {
                         </label>
                     }
                     {
-                        user ? <button onClick={handleSignOut} className="btn btn-ghost normal-case text-xl md:text-2xl font-bold">Logout</button>
+                        user ? <button onClick={handleSignOut} className="btn btn-ghost normal-case text-xl md:text-2xl font-bold text-white">Logout</button>
                             :
                             <Link to="/login">
                                 <button className="btn btn-ghost normal-case text-xl md:text-2xl font-bold text-white">Login</button>
