@@ -22,7 +22,7 @@ const Navbar = () => {
 
     const navLinks = <>
         <li><NavLink to="/" className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-orange-500 text-xl font-bold underline" : "text-xl font-bold"
+            isPending ? "pending" : isActive ? "text-orange-500 text-xl font-bold underline" : "text-xl font-bold text-white"
         }>Home</NavLink></li>
         <li><NavLink to="/addBlog" className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-orange-500 text-xl font-bold underline" : "text-xl font-bold text-white"
@@ -70,11 +70,15 @@ const Navbar = () => {
                         </label>
                     }
                     {
-                        user ? <button onClick={handleSignOut} className="btn btn-ghost normal-case text-xl md:text-2xl font-bold text-white">Logout</button>
+                        user ? <button onClick={handleSignOut} className="btn btn-ghost normal-case text-xl md:text-2xl font-semibold text-white">Logout</button>
                             :
-                            <Link to="/login">
-                                <button className="btn btn-ghost normal-case text-xl md:text-2xl font-bold text-white">Login</button>
-                            </Link>
+                            <>
+                                <Link to="/login">
+                                    <button className="btn btn-ghost normal-case text-xl md:text-2xl font-semibold text-white">Login</button>
+                                </Link> <Link to="/register">
+                                    <button className="btn btn-ghost normal-case text-xl md:text-2xl font-semibold text-white">Register</button>
+                                </Link>
+                            </>
                     }
                 </div>
             </div>
