@@ -15,25 +15,25 @@ const AddBlog = () => {
         console.log(addedBlogs);
 
         // send data to the server
-        // fetch('http://localhost:5000/blogs', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(addedBlogs)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-        //         if (data.insertedId) {
-        //             Swal.fire({
-        //                 text: 'New Blog added successfully!',
-        //                 icon: 'success',
-        //                 confirmButtonText: 'Ok'
-        //             })
-        //         }
-        //         form.reset();
-        //     })
+        fetch('http://localhost:5000/blogs', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(addedBlogs)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        text: 'New Blog added successfully!',
+                        icon: 'success',
+                        confirmButtonText: 'Ok'
+                    })
+                }
+                // form.reset();
+            })
     }
     return (
         <div>
