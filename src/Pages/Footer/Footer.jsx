@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div>
             <div className="flex justify-center items-center bg-slate-800">
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/y50Jhw2/architect-logo-60.png" alt="architect-logo-60" border="0"/></a>
+            <img src="https://i.ibb.co/p2H4PjL/Screenshot-1-removebg-preview.png" alt="logo" className="h-32"/>
             </div>
             <footer className="footer p-10 bg-slate-800 text-neutral-content">
                 <nav>

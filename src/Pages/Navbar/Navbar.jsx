@@ -50,7 +50,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <Link to="/">
-                        <img src="https://i.ibb.co/HdwD0sG/architect-logo-60.png" alt="architect-logo-60" border="0" className="hidden md:block" />
+                        <img src="https://i.ibb.co/p2H4PjL/Screenshot-1-removebg-preview.png" alt="architect-logo-60" border="0" className="hidden md:block h-16 w-36" />
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
