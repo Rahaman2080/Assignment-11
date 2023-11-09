@@ -14,7 +14,6 @@ const RecentBlogs = () => {
 
     return (
         <div className="p-6">
-            <h1 className="text-1xl md:text-3xl font-bold p-8">Recent Blogs----------------------------</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
              {
                 data.length > 0 ? data.slice(0, 6).map(blog => <Blog key={blog._id} blog={blog}></Blog>) : ''
