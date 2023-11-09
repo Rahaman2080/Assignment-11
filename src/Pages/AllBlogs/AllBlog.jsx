@@ -1,7 +1,7 @@
 
 
-const Blog = ({blog}) => {
-    const { category, image, shortDes, time, title, _id} = blog || {};
+const AllBlog = ({data}) => {
+    const { category, image, shortDes, time, title, _id} = data || {};
     return (
         <div>
             <div className="card card-compact w-full bg-base-100 shadow-xl">
@@ -21,4 +21,4 @@ const Blog = ({blog}) => {
     );
 };
 
-export default Blog;
+export default AllBlog;

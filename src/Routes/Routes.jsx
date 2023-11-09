@@ -6,6 +6,7 @@ import Login from "./Login/Login";
 import Register from './Register/Register';
 import AddBlog from "./AddBlog/AddBlog";
 import PrivateRoute from "./PriveteRoute/PrivateRoute";
+import AllBlogs from "../Pages/AllBlogs/AllBlogs";
   
   const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ import PrivateRoute from "./PriveteRoute/PrivateRoute";
         {
           path:"/addBlog",
           element: <PrivateRoute><AddBlog></AddBlog></PrivateRoute>
+        },
+        {
+          path: "/allBlogs",
+          element: <AllBlogs></AllBlogs>
         }
 
       ]

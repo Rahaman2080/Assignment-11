@@ -4,7 +4,6 @@ import Blog from "./Blog";
 
 const RecentBlogs = () => {
     const { data, isLoading, isFetching, refetch } = useBlogs();
-    console.log(data);
 
     if (isLoading == true) {
         return <div className=" flex justify-center items-center my-12">
@@ -14,9 +13,9 @@ const RecentBlogs = () => {
     }
 
     return (
-        <div>
-            <h1 className="text-3xl font-bold p-8">Recent Blogs----------------------------</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 m-6 max-w-5xl mx-auto">
+        <div className="p-6">
+            <h1 className="text-1xl md:text-3xl font-bold p-8">Recent Blogs----------------------------</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
              {
                 data.length > 0 ? data.slice(0, 6).map(blog => <Blog key={blog._id} blog={blog}></Blog>) : ''
             } 
