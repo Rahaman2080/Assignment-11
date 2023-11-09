@@ -32,7 +32,7 @@ const AddBlog = () => {
                         confirmButtonText: 'Ok'
                     })
                 }
-                // form.reset();
+                form.reset();
             })
     }
     return (

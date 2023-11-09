@@ -11,7 +11,7 @@ const Banner = () => {
                 <div className="hero-overlay bg-opacity-50"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-3xl md:text-4xl text-white font-bold">Enjoy different types of blog in your life</h1>
+                        <h1 className="mb-5 text-3xl md:text-4xl font-bold">Top 6 categories blogs you find here with free</h1>
                     </div>
                 </div>
             </div>
