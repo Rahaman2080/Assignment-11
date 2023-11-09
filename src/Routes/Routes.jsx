@@ -39,7 +39,7 @@ import WishList from "../Pages/WishList/WishList";
         {
           path: "blogDetails/:id",
           element: <PrivateRoute><BlogDetails></BlogDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`https://assignment-0006-server.vercel.app/blogdetails/${params.id}`)
+          loader: ({params}) => fetch(`http://localhost:5000/blogdetails/${params.id}`)
         },
         {
           path: "/wishList",

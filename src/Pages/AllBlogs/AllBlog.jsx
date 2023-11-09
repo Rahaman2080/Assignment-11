@@ -12,7 +12,7 @@ const AllBlog = ({data}) => {
         console.log(wishList);
 
         // send data to the server
-        fetch('https://assignment-0006-server.vercel.app/addwishlist', {
+        fetch('http://localhost:5000/addwishlist', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
