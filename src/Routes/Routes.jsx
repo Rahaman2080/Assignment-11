@@ -7,6 +7,7 @@ import Register from './Register/Register';
 import AddBlog from "./AddBlog/AddBlog";
 import PrivateRoute from "./PriveteRoute/PrivateRoute";
 import AllBlogs from "../Pages/AllBlogs/AllBlogs";
+import BlogDetails from "../Pages/BlogDetails/BlogDetails";
   
   const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ import AllBlogs from "../Pages/AllBlogs/AllBlogs";
         {
           path: "/allBlogs",
           element: <AllBlogs></AllBlogs>
+        },
+        {
+          path: "blogDetails/:id",
+          element: <BlogDetails></BlogDetails>
         }
 
       ]

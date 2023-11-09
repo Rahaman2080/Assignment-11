@@ -6,7 +6,7 @@ const LatestNews = () => {
     return (
         <div className="">
             <h1 className="text-1xl md:text-3xl font-bold p-8">Latest News--------------------</h1>
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-5xl grid justify-center items-center mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-10">
                     <div className="card w-72 bg-base-100 shadow-xl image-full">
                         <figure><img src="https://i.ibb.co/YTFFtD8/technology1.jpg" alt="Shoes" /></figure>

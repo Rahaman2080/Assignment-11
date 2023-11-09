@@ -21,9 +21,9 @@ const NewsLetter = () => {
             <div>
                 <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/4sFJm9H/newsletter-Img2.jpg)' }}>
                     {/* <div className="hero-overlay bg-opacity-30"></div> */}
-                    <div className=" text-center text-white">
-                        <div className="max-w-md">
-                            <h1 className="mb-5 text-3xl md:text-5xl font-bold">Subscrib Us</h1>
+                    <div className=" text-center text-white mx-auto">
+                        <div className="max-w-md mx-auto">
+                            <h1 className="mb-5 text-3xl md:text-5xl font-bold">Subscribe Us</h1>
                             <p className="font-bold text-xl">To get All latest blogs please Stay with us by subscribing. Just Put your email and click subscribe button.</p>
                             <form onSubmit={handleEmail} className="flex items-center justify-center">
                                 <fieldset className="form-control w-80">

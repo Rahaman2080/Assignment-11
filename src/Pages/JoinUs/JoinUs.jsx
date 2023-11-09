@@ -43,7 +43,7 @@ const JoinUs = () => {
                         <span className="mb-1">Message</span> 
                         <textarea placeholder="Type your message" rows="3" className="block w-full pt-2 pl-4 mt-2 rounded-md focus:ring focus:ri focus:ri dark:bg-gray-800"></textarea>
                     </label>
-                    <button type="button" className="self-center px-8 py-2 text-lg rounded focus:ring hover:ring focus:ri dark:bg-violet-400 dark:text-gray-900 focus:ri hover:ri  bg-fuchsia-700 hover:bg-fuchsia-900 text-white ">Submit</button>
+                    <button type="button" className="btn btn-primary btn-outline normal-case">Submit</button>
                 </form>
             </div>
         </div>
