@@ -33,7 +33,7 @@ const Navbar = () => {
         <li><NavLink to="/featuredBlogs" className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-orange-500 text-xl font-bold underline" : "text-xl font-bold text-white"
         }>Featured blogs</NavLink></li>
-        <li><NavLink to="/wishlist" className={({ isActive, isPending }) =>
+        <li><NavLink to="/wishList" className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-orange-500 text-xl font-bold underline" : "text-xl font-bold text-white"
         }>Wishlist</NavLink></li>
     </>

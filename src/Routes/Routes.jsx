@@ -8,6 +8,7 @@ import AddBlog from "./AddBlog/AddBlog";
 import PrivateRoute from "./PriveteRoute/PrivateRoute";
 import AllBlogs from "../Pages/AllBlogs/AllBlogs";
 import BlogDetails from "../Pages/BlogDetails/BlogDetails";
+import WishList from "../Pages/WishList/WishList";
   
   const router = createBrowserRouter([
     {
@@ -37,8 +38,13 @@ import BlogDetails from "../Pages/BlogDetails/BlogDetails";
         },
         {
           path: "blogDetails/:id",
-          element: <BlogDetails></BlogDetails>,
+          element: <PrivateRoute><BlogDetails></BlogDetails></PrivateRoute>,
           loader: ({params}) => fetch(`http://localhost:5000/blogdetails/${params.id}`)
+        },
+        {
+          path: "/wishList",
+          element: <PrivateRoute><WishList></WishList></PrivateRoute>,
+          loader: () => fetch('https://brand-shop-server-gold.vercel.app/mycart')
         }
 
       ]

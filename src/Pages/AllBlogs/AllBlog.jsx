@@ -1,8 +1,37 @@
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const AllBlog = ({data}) => {
     const { category, image, shortDes, time, title, _id} = data || {};
+  
+
+
+    const handleWishList = () =>{
+        const wishList = { category, image, shortDes, time, title, _id }
+        console.log(wishList);
+
+        // send data to the server
+        fetch('http://localhost:5000/addwishlist', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(wishList)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        text: 'Blogs added to wishlist successful!',
+                        icon: 'success',
+                        confirmButtonText: 'Ok'
+                    })
+                }
+            })
+    }
+
     return (
         <div>
             <div className="card card-compact w-full bg-base-100 shadow-xl">
@@ -16,7 +45,7 @@ const AllBlog = ({data}) => {
                         <Link to={`/blogDetails/${_id}`}>
                         <button className="btn btn-ghost">Details</button>
                         </Link>
-                        <button className="btn btn-ghost">Wishlist</button>
+                        <button onClick={handleWishList} className="btn btn-ghost">Wishlist</button>
                     </div>
                 </div>
             </div>
