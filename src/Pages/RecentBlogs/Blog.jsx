@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Blog = ({blog}) => {
@@ -12,7 +13,9 @@ const Blog = ({blog}) => {
                     <p>Time: {time}</p>
                     <p className="h-32">{shortDes}</p>
                     <div className="card-actions justify-around items-center">
+                        <Link to="/blogDetails">
                         <button className="btn btn-ghost">Details</button>
+                        </Link>
                         <button className="btn btn-ghost">Wishlist</button>
                     </div>
                 </div>

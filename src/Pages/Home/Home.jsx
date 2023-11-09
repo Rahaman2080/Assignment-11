@@ -1,5 +1,6 @@
 
 import Banner from "../Banner/Banner";
+import JoinUs from "../JoinUs/JoinUs";
 import LatestNews from "../LatestNews/LatestNews";
 import NewsLetter from "../NewsLetter/NewsLetter";
 import RecentBlogs from "../RecentBlogs/RecentBlogs";
@@ -16,8 +17,11 @@ const Home = () => {
             <div>
                 <NewsLetter></NewsLetter>
             </div>
-            <div>
+            <div className="">
                 <LatestNews></LatestNews>
+            </div>
+            <div>
+                <JoinUs></JoinUs>
             </div>
         </div>
     );
