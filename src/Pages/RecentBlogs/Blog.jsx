@@ -13,7 +13,7 @@ const Blog = ({blog}) => {
                     <p>Time: {time}</p>
                     <p className="h-32">{shortDes}</p>
                     <div className="card-actions justify-around items-center">
-                        <Link to="/blogDetails">
+                        <Link to={`/blogDetails/${_id}`}>
                         <button className="btn btn-ghost">Details</button>
                         </Link>
                         <button className="btn btn-ghost">Wishlist</button>

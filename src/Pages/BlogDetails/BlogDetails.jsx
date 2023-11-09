@@ -1,18 +1,17 @@
-import useBlogs from "../../hooks/useBlogs";
+import { useLoaderData } from "react-router-dom";
+import BlogDetail from "./BlogDetail";
 
 
 const BlogDetails = () => {
-    const { data, isLoading, isFetching, refetch } = useBlogs();
 
-    if (isLoading == true) {
-        return <div className=" flex justify-center items-center my-12">
-            <span className="loading loading-bars loading-lg"></span>
-        </div>
-       
-    }
+    const blogDetails = useLoaderData();
+    console.log(blogDetails);
     return (
         <div>
-            
+            <h1 className="text-center font-bold text-3xl">Blog details</h1>
+            <div>
+                <BlogDetail detail={blogDetails}></BlogDetail>
+            </div>
         </div>
     );
 };

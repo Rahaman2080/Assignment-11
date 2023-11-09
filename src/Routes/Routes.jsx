@@ -37,7 +37,8 @@ import BlogDetails from "../Pages/BlogDetails/BlogDetails";
         },
         {
           path: "blogDetails/:id",
-          element: <BlogDetails></BlogDetails>
+          element: <BlogDetails></BlogDetails>,
+          loader: ({params}) => fetch(`http://localhost:5000/blogdetails/${params.id}`)
         }
 
       ]
