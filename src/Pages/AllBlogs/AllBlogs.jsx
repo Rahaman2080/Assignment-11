@@ -13,7 +13,7 @@ const AllBlogs = () => {
     }
     return (
         <div className="p-8">
-            <h1 className="text-3xl font-bold,">Total Blogs {data.length}</h1>
+            <h1 className=" text-1xl md:text-3xl font-bold text-center py-5">____________All Blogs_____________</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {
                 data.map(data => <AllBlog key={data._id} data={data}></AllBlog>)
